@@ -1,0 +1,10 @@
+numpy==1.24.0
+torch==2.3.0
+tensorboard
+mpi4py
+argparse
+wandb
+gymnasium==0.29.1
+gymnasium-robotics==1.2.4
+panda-gym==3.0.7
+loralib
