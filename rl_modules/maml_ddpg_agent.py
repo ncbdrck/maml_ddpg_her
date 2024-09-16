@@ -561,9 +561,8 @@ class maml_ddpg_her_agent:
             self.inner_critic_optims[env_idx].step()
 
         # soft update the target networks
-        # we need this since we are sampling new trajectories using the updated task-specific networks
-        self._soft_update_target_network(self.inner_actor_target_networks[env_idx], self.inner_actor_networks[env_idx])
-        self._soft_update_target_network(self.inner_critic_target_networks[env_idx], self.inner_critic_networks[env_idx])
+        # self._soft_update_target_network(self.inner_actor_target_networks[env_idx], self.inner_actor_networks[env_idx])
+        # self._soft_update_target_network(self.inner_critic_target_networks[env_idx], self.inner_critic_networks[env_idx])
 
 
         # Sample new trajectories using updated task-specific networks
